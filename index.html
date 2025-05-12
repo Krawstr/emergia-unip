@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emergia Sustentável</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <h1>Entenda o Poder da Emergia</h1>
-      <p>Avaliação emergética e sustentabilidade no campus UNIP Marquês/Chácara.</p>
-      <button onclick="scrollToSection('introducao')">Comece sua Jornada Sustentável</button>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#">Pagina Inicial</a>
+      <a href="#">Tabelas</a>
+      <a href="#">Bibliografia</a>
     </div>
+  </nav>
+  <header class="hero">
+  <div class="hero-content">
+    <h1>Poder da <br>Emergia</h1>
+    <p>Avaliação emergética e sustentabilidade no campus UNIP Marquês/Chácara.</p>
+    <button onclick="scrollToSection('introducao')">Comece sua Jornada Sustentável</button>
+  </div>
   </header>
-
   <main>
     <section id="introducao">
-      <h2>O que é Emergia?</h2>
+      <h2 class="toggle-title">O que é Emergia?</h2>
+      <div class='hidden-content'>
       <p><strong>Emergia</strong> é a energia solar direta e indiretamente utilizada para gerar um produto ou serviço,
         convertendo diferentes formas de energia, materiais e trabalho em uma única unidade: o <strong>sej (solar
           emjoule)</strong>.</p>
@@ -56,10 +61,12 @@
         <li><strong>Avaliação de serviços ecossistêmicos</strong>: como polinização, purificação da água, fotossíntese e
           produção de solo fértil.</li>
       </ul>
+      </div>
     </section>
 
     <section id="aplicacao">
-      <h2>Aplicações no Campus</h2>
+      <h2 class="toggle-title">Aplicações no Campus</h2>
+      <div class="hidden-content">
       <p>Ao aplicar a metodologia emergética ao <strong>campus UNIP Marquês/Chácara</strong>, é possível identificar
         formas mais sustentáveis de operação, economia de recursos e promoção da educação ambiental.</p>
 
@@ -75,10 +82,12 @@
 
       <p>Essas análises permitem propor mudanças com base científica, mensurando os reais benefícios ambientais das
         ações implementadas.</p>
+      </div>
     </section>
 
     <section id="ferramentas">
-      <h2>Ferramentas de Avaliação Emergética</h2>
+      <h2 class="toggle-title">Ferramentas de Avaliação Emergética</h2>
+      <div class="hidden-content">
       <p>Duas ferramentas principais auxiliam na aplicação prática da avaliação emergética:</p>
 
       <ul>
@@ -92,10 +101,12 @@
 
       <p>Ambas são ferramentas open-source e utilizadas em estudos acadêmicos, pesquisas ambientais e desenvolvimento de
         políticas públicas sustentáveis.</p>
+      </div>
     </section>
 
     <section id="propostas">
-      <h2>Propostas Sustentáveis para o Campus</h2>
+      <h2 class="toggle-title">Propostas Sustentáveis para o Campus</h2>
+      <div class="hidden-content">
       <p>Com base nos conceitos da emergia, algumas propostas práticas podem ser adotadas para melhorar a
         sustentabilidade do campus:</p>
 
@@ -110,6 +121,7 @@
         <li><strong>Banco emergético:</strong> desenvolver um painel de indicadores emergéticos do campus como
           ferramenta de gestão institucional.</li>
       </ul>
+      </div>
     </section>
   </main>
 

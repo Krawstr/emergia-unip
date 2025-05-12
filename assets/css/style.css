@@ -1,3 +1,62 @@
+.hidden-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease;
+}
+
+.hidden-content.show {
+  max-height: 2000px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #a5d6a7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: felx;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #2e7d32;
+}
+
+section h2{
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+section h2::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 0.3s ease;
+}
+
+section h2.open::after {
+  transform: rotate(180deg);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,38 +70,81 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: linear-gradient(to right, #a5d6a7, #e8f5e9);
-  padding: 4rem 1rem;
+.hero {
+  background-image: url('https://lactec.com.br/wp-content/uploads/2023/04/sustentabilidade_ESG-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 80vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   text-align: center;
+  position: relative;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #2e7d32;
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* escurece a imagem para melhor contraste */
+  z-index: 1;
 }
 
-header p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
 }
 
-header button {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  background-color: #388e3c;
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.hero button {
+  background-color: #4CAF50;
   color: white;
   border: none;
-  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-header button:hover {
-  background-color: #2e7d32;
+.hero-alt {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100a;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(60%);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
 }
 
 main {
