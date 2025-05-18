@@ -4,19 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styleNavBar.css">
+    <link rel="stylesheet" href="/assets/css/whatsEmergy.css">
+    <link rel="stylesheet" href="/assets/css/styleFooter.css">
     <title>O que é emergia?</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Tabelas</a></li>
-                <li><a href="#">Bibliografia</a></li>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/index.html">Página Inicial</a></li>
+                <li><a href="pages/proposal.html">Proposta</a></li>
+                <li><a href="pages/bibliography.html">Bibliografia</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div class="container-main">
+            <h1>EMERGIA: Conceito, Fundamentos Teóricos e Aplicações Práticas</h1>
+
+            <p>A sociedade moderna depende de uma grande variedade de recursos naturais e tecnológicos para funcionar —
+                energia elétrica, combustíveis, alimentos, metais, serviços humanos, entre outros. No entanto, avaliar o
+                verdadeiro custo ambiental desses recursos vai além de medir apenas a energia ou o dinheiro envolvidos.
+                É nesse contexto que surge o conceito de <strong>emergia</strong>, uma ferramenta poderosa para mensurar
+                a <strong>energia incorporada</strong> (ou investida) em qualquer bem ou processo, levando em conta
+                todas as transformações anteriores necessárias para sua obtenção.</p>
+
+            <h2>1. Definição de Emergia</h2>
+            <p><strong>Emergia</strong> é definida como a <strong>quantidade de energia solar direta e indiretamente
+                    usada para produzir um recurso, produto ou serviço</strong>, expressa em <em>joules de energia solar
+                    equivalente</em> (solar emjoules, ou <strong>sej</strong>).</p>
+            <blockquote>“Emergia é a energia de uma forma (geralmente solar) necessária para produzir um recurso ou
+                serviço, contabilizando todos os passos intermediários do processo.” — Howard T. Odum</blockquote>
+            <p>A emergia inclui todas as <strong>formas de energia, materiais e serviços</strong> que contribuíram para
+                a produção de algo, <strong>convertidas para um denominador comum: energia solar</strong>.</p>
+
+            <h2>2. Fundamentos Teóricos</h2>
+            <p>O conceito foi desenvolvido por <strong>Howard T. Odum</strong>, ecólogo de sistemas. Ele criou a chamada
+                <em>linguagem de sistemas energéticos</em>, com símbolos e regras próprias para representar fluxos de
+                energia e matéria.
+            </p>
+
+            <h3>2.1 Unidades e Conversões</h3>
+            <ul>
+                <li><strong>Energia</strong> (J): capacidade de realizar trabalho.</li>
+                <li><strong>Emergia</strong> (sej): energia solar usada para produzir uma unidade de energia, material
+                    ou serviço.</li>
+                <li><strong>Transformidade</strong>: razão entre emergia e energia (sej/J). Mede a "qualidade" de uma
+                    fonte.</li>
+            </ul>
+            <p><strong>Exemplo:</strong></p>
+            <ul>
+                <li>1 J de eletricidade → ~2,0 × 10⁵ sej/J</li>
+                <li>1 J de radiação solar → 1 sej/J (base do sistema)</li>
+            </ul>
+
+            <h3>2.2 Regras da Álgebra de Emergia (Odum, 1996)</h3>
+            <ul>
+                <li><strong>Somatório</strong>: quando fluxos convergem, a emergia se soma.</li>
+                <li><strong>Co-produtos</strong>: cada co-produto recebe 100% da emergia.</li>
+                <li><strong>Seleção de caminho</strong>: apenas o caminho usado contribui com emergia.</li>
+                <li><strong>Retroalimentações</strong>: não se pode contar duas vezes a emergia retroalimentada.</li>
+            </ul>
+
+            <h2>3. Cálculo de Emergia</h2>
+            <p>A fórmula básica:</p>
+            <pre>Emergia (sej) = Quantidade × UEV</pre>
+            <p>UEV = Valor Emergético Unitário (sej/unidade)</p>
+
+            <h3>Exemplos:</h3>
+            <ul>
+                <li>Eletricidade: 2,0 × 10⁵ sej/J</li>
+                <li>Carvão: 1,1 × 10¹² sej/kg</li>
+                <li>Trabalho humano: ~1,0 × 10¹⁴ sej/h</li>
+            </ul>
+
+            <h2>4. Indicadores Emergéticos</h2>
+            <ul>
+                <li><strong>EYR</strong> (Emergy Yield Ratio): Emergia total / emergia de insumos externos</li>
+                <li><strong>ELR</strong> (Environmental Loading Ratio): (F + N) / R</li>
+                <li><strong>ESI</strong> (Emergy Sustainability Index): EYR / ELR</li>
+                <li><strong>Transformidade</strong>: sej/J</li>
+            </ul>
+
+            <h2>5. Aplicações Práticas da Emergia</h2>
+
+            <h3>5.1 Sustentabilidade</h3>
+            <p>Comparação de práticas agrícolas, processos industriais ou cidades para avaliar autossuficiência e
+                impacto ecológico.</p>
+
+            <h3>5.2 Comparação de Tecnologias</h3>
+            <p>Exemplo: solar vs. termelétrica — emergia mostra o custo total ambiental.</p>
+
+            <h3>5.3 Planejamento Territorial</h3>
+            <p>Avaliação de uso do solo, recursos locais, autossuficiência energética e carga ecológica.</p>
+
+            <h3>5.4 Construção Civil</h3>
+            <p>Análise do custo ambiental de materiais como cimento, aço, transporte e energia incorporada nas obras.
+            </p>
+
+            <h3>5.5 Ferramentas</h3>
+            <ul>
+                <li><strong>SCALE</strong>: usa banco ecoinvent® para aplicar álgebra da emergia automaticamente.</li>
+                <li><strong>EmSim</strong>: cria diagramas de energia e simula equações diferenciais com emergia.</li>
+            </ul>
+
+            <h2>6. Vantagens e Limitações</h2>
+            <h3>Vantagens:</h3>
+            <ul>
+                <li>Integra energia, matéria, serviços e dinheiro.</li>
+                <li>Visão holística e ecocentrada.</li>
+                <li>Considera serviços ecossistêmicos e externalidades.</li>
+            </ul>
+            <h3>Limitações:</h3>
+            <ul>
+                <li>Dados de UEV nem sempre são fáceis de obter.</li>
+                <li>Requer modelagem e conhecimento técnico.</li>
+                <li>Alguma subjetividade na definição dos caminhos energéticos.</li>
+            </ul>
+
+            <h2>7. Conclusão</h2>
+            <p>A emergia é uma ferramenta poderosa para compreender a verdadeira demanda energética da sociedade sobre a
+                natureza. Ela vai além das métricas convencionais, permitindo análises mais justas e profundas sobre a
+                sustentabilidade de sistemas humanos e ecológicos. Em um planeta cada vez mais pressionado, a emergia
+                surge como um guia técnico e ético para decisões mais conscientes.</p>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 - UNIP Marquês/Chácara | Projeto APS - Programação Web Responsiva</p>
+    </footer>
 </body>
 
 </html>

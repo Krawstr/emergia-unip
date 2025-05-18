@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-image: linear-gradient(45deg, #42c79f, #0c6464);
+}
+
+
+.nav-links ul {
+    list-style-type: none;
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 65%;
+    font-weight: bold;
+}
