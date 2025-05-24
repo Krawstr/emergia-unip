@@ -16,13 +16,13 @@ body {
 .container-main h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #005e90;
+    color: #268626;
 }
 
 .container-main h2 {
     font-size: 1.5rem;
     margin-top: 2rem;
-    color: #004e78;
+    color: #268626;
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 0.3rem;
 }
@@ -66,7 +66,7 @@ body {
 }
 
 .container-main strong {
-    color: #005e90;
+    color: #5cb85c;
 }
 
 .container-main em {
