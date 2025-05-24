@@ -7,7 +7,7 @@
 h1,
 h2,
 h3 {
-    color: #2d5d89;
+    color: #2d894c;
 }
 
 section {
@@ -42,6 +42,10 @@ ul {
     padding-left: 1.5rem;
 }
 
+img{
+    max-width: 400px;
+    height: auto
+}
 
 
 @media (max-width: 768px) {
@@ -89,5 +93,10 @@ ul {
         left: 1rem;
         font-weight: bold;
         white-space: nowrap;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto
     }
 }
