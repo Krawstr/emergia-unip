@@ -31,3 +31,28 @@
     left: 65%;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        position: static;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        text-align: left;
+        width: 100%;
+        padding: 12px 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
